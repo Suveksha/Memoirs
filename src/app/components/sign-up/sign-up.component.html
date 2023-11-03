@@ -1,0 +1,41 @@
+<div class="page-container">
+    <div class="left-child">Left</div>
+    <div class="right-child">
+        <form class="signup-wrapper" [formGroup]="signUpForm">
+            <div>Sign Up to showcase your memories.</div>
+            <div>
+                <mat-form-field class="example-form-field">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="email" formControlName="user_email">
+                  </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field class="example-form-field">
+                    <mat-label>Username</mat-label>
+                    <input matInput type="text" formControlName="username">
+                  </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field class="example-form-field">
+                    <mat-label>Password</mat-label>
+                    <div class="password-field">
+                        <input matInput [type]="hidePasswordValue ? 'password' : 'text'" formControlName="password" id="password">
+                        <button (click)="togglePassword('show')" *ngIf="hidePasswordValue"><mat-icon>visibility</mat-icon></button>
+                        <button (click)="togglePassword('hide')" *ngIf="!hidePasswordValue"><mat-icon>visibility_off</mat-icon></button>
+                    </div>
+                  </mat-form-field>
+            </div>
+            <div *ngIf="showConfirmPassword" class="conf-pwd-wrapper">
+                <mat-form-field>
+                    <mat-label>Confirm Password</mat-label>
+                    <input matInput type="text" formControlName="confPassword">
+                </mat-form-field>
+                <div *ngIf="confirmPasswordFailError" class="error-msg">The passwords do not match.</div>
+            </div>
+            <div>
+                <button mat-raised-button color="primary" (click)="callSignUp()">Primary</button>
+            </div>
+            <div>Google X Facebook</div>
+        </form>
+    </div>
+</div>
