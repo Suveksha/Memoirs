@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.profile-wrapper{
+    display:flex;
+    border:1px solid red;
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+.right-wrapper{
+    width:70%;
+    border: 1px solid blue;
+}
+
+.left-wrapper{
+    width:30%;
+    border:1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1%;
+}
+
+.profile-img-wrapper{
+    /* border:3px solid green; */
+    padding:5%;
+}
+
+.profile-img-wrapper img{
+    width:230px;
+    height:230px;
+    border-radius:60%;
+}
+
+.account-details{
+    display: flex;
+    gap:20px;
+}
+
+.profile-quote{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+.cards-wrapper{
+    border:2px solid purple;
+    display:flex;
+    flex-wrap: wrap;
+    gap:3%;
+}
+
+.cards-wrapper img{
+    width:200px;
+}
+
+.cards-wrapper mat-card{
+    border:2px solid red;
+    margin:2%;
+}
+@media only screen and (max-width: 600px){
+    .profile-wrapper{
+        display:block;
+    }
+
+    .right-wrapper{
+        width:100%;
+    }
+
+    .left-wrapper{
+        width:100%;
+    }
+
+    .account-details{
+        display: flex;
+        gap:10px;
+    }
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kalam:wght@300&display=swap');
+
+.view-wrapper{
+    display: flex;
+    border:1px solid maroon;
+    height: 500px;
+    width:800px;
+}
+
+.left-view-wrapper{
+    width:50%;
+    padding: 2%;
+    border:2px solid pink;
+}
+
+.right-view-wrapper{
+    width:50%;
+    border:2px solid firebrick;
+}
+
+.left-view-wrapper .mat-mdc-card{
+    height:100% !important;
+    width: 100%;
+}
+
+.left-view-wrapper img{
+    padding:3%;
+    height:100%;
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* border:2px solid black; */
+}
+
+.btn-wrapper mat-icon{
+
+    transform: scale(1.25);
+}
+
+.liked{
+    color:rgba(227, 56, 56, 0.788);
+}
+
+.unliked{
+    color:rgba(119, 115, 115, 0.75);
+}
+
+.btn-wrapper p{
+    font-family: 'Kalam', cursive;
+}

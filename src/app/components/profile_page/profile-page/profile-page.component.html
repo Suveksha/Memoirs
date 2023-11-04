@@ -1,0 +1,26 @@
+<div class="profile-wrapper">
+    <div class="left-wrapper">
+        <div class="profile-img-wrapper">
+            <img src="../../../../assets/images/sunflower_profile.jpg" alt="profile_img">
+        </div>
+        <div>
+            Suveksha Chettri
+        </div>
+        <div class="account-details">
+            <p>Posts : 200</p>
+            <p>Followers : 300</p>
+            <p>Following: 300</p>
+        </div>
+        <div class="profile-quote">The way I see it, if you want the rainbow, you gotta put up with the rain</div>
+    </div>
+    <div class="right-wrapper">
+        <div class="cards-wrapper">
+            <mat-card *ngFor="let card of cards">
+                <mat-card-content>
+                    <img src="../../../../assets/images/card-image.jpeg" alt="card-image" (click)="viewPicture({'msg':'Hello There!','imgPath':'../../../../assets/images/card-image.jpeg'})">
+                    <p>Hello</p>
+                </mat-card-content>
+              </mat-card>
+        </div>
+    </div>
+</div>

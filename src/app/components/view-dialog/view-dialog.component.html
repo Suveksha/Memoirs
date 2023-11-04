@@ -1,0 +1,18 @@
+<div class="view-wrapper">
+    <div class="left-view-wrapper">
+        <mat-card>
+            <img [src]="data.imgPath" alt="Hello">
+           <div class="btn-wrapper">
+            <mat-icon (click)="updateLike()" [ngClass]="{liked:checkLikeColor, unliked:!checkLikeColor}">thumb_up</mat-icon>
+            <p>#MyPuppyLove</p>
+            <p>04.07.2023</p>
+           </div>
+        </mat-card>
+    </div>
+    <div class="right-view-wrapper">
+        <div>Comments</div>
+        <div>
+            to be continued
+        </div>
+    </div>
+</div>

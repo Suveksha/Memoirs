@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
+import { ProfilePageComponent } from './components/profile_page/profile-page/profile-page.component';
+import { ViewDialogComponent } from './components/view-dialog/view-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignUpComponent
+    SignUpComponent,
+    ProfilePageComponent,
+    ViewDialogComponent
   ],
   imports: [
     BrowserModule,
