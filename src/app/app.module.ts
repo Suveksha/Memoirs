@@ -8,13 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { ProfilePageComponent } from './components/profile_page/profile-page/profile-page.component';
 import { ViewDialogComponent } from './components/view-dialog/view-dialog.component';
+import { FeedPageComponent } from './components/feed-page/feed-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
     ProfilePageComponent,
-    ViewDialogComponent
+    ViewDialogComponent,
+    FeedPageComponent
   ],
   imports: [
     BrowserModule,

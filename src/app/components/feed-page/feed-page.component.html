@@ -1,0 +1,16 @@
+<div class="feed-container">
+    <mat-card class="feed-wrapper">
+        <img src="../../../../assets/images/card-image.jpeg" alt="image">
+            <div class="btn-wrapper">
+                <mat-icon (click)="updateLike()" [ngClass]="{liked:checkLikeColor, unliked:!checkLikeColor}">thumb_up</mat-icon>
+                <mat-icon (click)="addComment()" style="color:rgba(119, 115, 115, 0.75)"> comment</mat-icon>
+            </div>
+    </mat-card>
+    <mat-card class="feed-wrapper">
+        <img src="../../../../assets/images/card-image.jpeg" alt="image">
+        <div class="btn-wrapper">
+            <mat-icon (click)="updateLike()" [ngClass]="{liked:checkLikeColor, unliked:!checkLikeColor}">thumb_up</mat-icon>
+            <mat-icon (click)="addComment()" style="color:rgba(119, 115, 115, 0.75)"> comment</mat-icon>
+        </div>
+    </mat-card>
+</div>

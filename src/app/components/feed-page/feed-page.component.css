@@ -1,0 +1,44 @@
+.liked{
+    color:rgba(227, 56, 56, 0.788);
+}
+
+.unliked{
+    color:rgba(119, 115, 115, 0.75);
+}
+
+.feed-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    border:1px solid hotpink;
+}
+
+.feed-wrapper{
+    width:40%;
+    height:70%;
+    margin-bottom:3%;
+    border: 1px solid black;
+}
+
+.feed-wrapper img{
+    padding-left:4%;
+    padding-right:4%;
+    padding-top:5%;
+    padding-bottom: 2%;
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+    height:3rem;
+    /* margin-right: 4%; */
+    /* border:1px solid red; */
+}
+
+.btn-wrapper mat-icon{
+    transform: scale(1.25);
+    /* border: 1px solid green; */
+}
